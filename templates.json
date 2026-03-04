@@ -18,15 +18,25 @@
       ]
     },
     {
-      "name":"test",
+      "name":"Change Scheduled Shift",
       "subject":"Customer",
-      "text":"test",
+      "text":"Confirmed interview with [CaregiverName] on [DateTimeAvailable].",
       "fields":[
         {
-          "name":"",
-          "text":"",
+          "name":"CaregiverName",
+          "text":"Caregiver Name",
           "description":"",
-          "type":"",
+          "type":"string",
+          "defaultValue":"",
+          "options":[
+            ""
+          ]
+        },
+        {
+          "name":"DateTimeAvailable",
+          "text":"Date/Time Available",
+          "description":"",
+          "type":"datetime",
           "defaultValue":"",
           "options":[
             ""
