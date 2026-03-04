@@ -16,6 +16,23 @@
           ]
         }
       ]
+    },
+    {
+      "name":"test",
+      "subject":"Customer",
+      "text":"test",
+      "fields":[
+        {
+          "name":"",
+          "text":"",
+          "description":"",
+          "type":"",
+          "defaultValue":"",
+          "options":[
+            ""
+          ]
+        }
+      ]
     }
   ]
 }
