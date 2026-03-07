@@ -2,6 +2,7 @@
   "templates":[
     {
       "name":"test",
+      "type":"Note",
       "subject":"Caregiver",
       "text":"test",
       "fields":[
@@ -19,6 +20,7 @@
     },
     {
       "name":"Change Scheduled Shift",
+      "type":"Note",
       "subject":"Customer",
       "text":"Confirmed interview with [CaregiverName] on [DateTimeAvailable].",
       "fields":[
