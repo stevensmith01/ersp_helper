@@ -45,6 +45,34 @@
           ]
         }
       ]
+    },
+    {
+      "name":"Notify Client of Shift Change",
+      "type":"Task",
+      "subject":"Customer",
+      "text":"Call client to notify them that their original shift on [DateTimeOriginal] has been changed to [DateTimeNew].",
+      "fields":[
+        {
+          "name":"DateTimeOriginal",
+          "text":"Original Shift Date/Time",
+          "description":"",
+          "type":"datetime",
+          "defaultValue":"",
+          "options":[
+            ""
+          ]
+        },
+        {
+          "name":"DateTimeNew",
+          "text":"New Shift Date/Time",
+          "description":"",
+          "type":"datetime",
+          "defaultValue":"",
+          "options":[
+            ""
+          ]
+        }
+      ]
     }
   ]
 }
