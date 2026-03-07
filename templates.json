@@ -19,6 +19,34 @@
       ]
     },
     {
+      "name":"Notify Caregiver of Shift Change",
+      "type":"Task",
+      "subject":"Caregiver",
+      "text":"Call caregiver and let them know that their shift has changed from [OriginalShift] to [NewShift].",
+      "fields":[
+        {
+          "name":"OriginalShift",
+          "text":"Original Shift",
+          "description":"Enter the original shift date and time.",
+          "type":"DateTime",
+          "defaultValue":"",
+          "options":[
+            ""
+          ]
+        },
+        {
+          "name":"NewShift",
+          "text":"New Shift",
+          "description":"Enter the new shift date and time.",
+          "type":"DateTime",
+          "defaultValue":"",
+          "options":[
+            ""
+          ]
+        }
+      ]
+    },
+    {
       "name":"Change Scheduled Shift",
       "type":"Note",
       "subject":"Customer",
