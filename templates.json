@@ -28,7 +28,7 @@
           "name":"OriginalShift",
           "text":"Original Shift",
           "description":"Enter the original shift date and time.",
-          "type":"DateTime",
+          "type":"datetime",
           "defaultValue":"",
           "options":[
             ""
@@ -38,7 +38,7 @@
           "name":"NewShift",
           "text":"New Shift",
           "description":"Enter the new shift date and time.",
-          "type":"DateTime",
+          "type":"datetime",
           "defaultValue":"",
           "options":[
             ""
