@@ -148,7 +148,7 @@
           "name":"CertificationType",
           "text":"Certification Type",
           "description":"Select the type of certification that is expiring.",
-          "type":"option",
+          "type":"select",
           "defaultValue":"CPR",
           "options":[
             "CPR",
@@ -192,7 +192,7 @@
           "name":"IncidentType",
           "text":"Incident Type",
           "description":"Select the type of incident.",
-          "type":"option",
+          "type":"select",
           "defaultValue":"Client Fall",
           "options":[
             "Client Fall",
@@ -254,7 +254,7 @@
           "name":"PerformanceType",
           "text":"Performance Note Type",
           "description":"Select whether this is a positive or corrective note.",
-          "type":"option",
+          "type":"select",
           "defaultValue":"Commendation",
           "options":[
             "Commendation",
@@ -342,7 +342,7 @@
           "name":"ComplaintCategory",
           "text":"Complaint Category",
           "description":"Select the category that best describes the complaint.",
-          "type":"option",
+          "type":"select",
           "defaultValue":"Caregiver Conduct",
           "options":[
             "Caregiver Conduct",
@@ -424,7 +424,7 @@
           "name":"DischargeReason",
           "text":"Discharge Reason",
           "description":"Select the reason services are ending.",
-          "type":"option",
+          "type":"select",
           "defaultValue":"Client Request",
           "options":[
             "Client Request",
