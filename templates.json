@@ -101,6 +101,454 @@
           ]
         }
       ]
+    },
+    {
+      "name":"Caregiver No-Show",
+      "type":"Task",
+      "subject":"Caregiver",
+      "text":"Caregiver did not arrive for scheduled shift on [ShiftDate]. Attempt to contact caregiver and arrange replacement coverage for client.",
+      "fields":[
+        {
+          "name":"ShiftDate",
+          "text":"Missed Shift Date/Time",
+          "description":"Enter the date and time of the missed shift.",
+          "type":"datetime",
+          "defaultValue":"",
+          "options":[
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Caregiver Called Out Sick",
+      "type":"Task",
+      "subject":"Caregiver",
+      "text":"Caregiver called out sick for shift on [ShiftDate]. Find replacement coverage and notify client of caregiver change.",
+      "fields":[
+        {
+          "name":"ShiftDate",
+          "text":"Affected Shift Date/Time",
+          "description":"Enter the date and time of the shift that needs coverage.",
+          "type":"datetime",
+          "defaultValue":"",
+          "options":[
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Caregiver Certification Expiring",
+      "type":"Task",
+      "subject":"Caregiver",
+      "text":"Caregiver's [CertificationType] certification is expiring on [ExpirationDate]. Contact caregiver to remind them to renew and submit updated documentation.",
+      "fields":[
+        {
+          "name":"CertificationType",
+          "text":"Certification Type",
+          "description":"Select the type of certification that is expiring.",
+          "type":"option",
+          "defaultValue":"CPR",
+          "options":[
+            "CPR",
+            "First Aid",
+            "CNA",
+            "HHA",
+            "Driver's License",
+            "TB Test",
+            "Other"
+          ]
+        },
+        {
+          "name":"ExpirationDate",
+          "text":"Expiration Date",
+          "description":"Enter the date the certification expires.",
+          "type":"datetime",
+          "defaultValue":"",
+          "options":[
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Caregiver Incident Report",
+      "type":"Note",
+      "subject":"Caregiver",
+      "text":"Caregiver reported an incident on [IncidentDate] at client's location. Incident type: [IncidentType]. Details: [IncidentDetails].",
+      "fields":[
+        {
+          "name":"IncidentDate",
+          "text":"Incident Date/Time",
+          "description":"Enter the date and time the incident occurred.",
+          "type":"datetime",
+          "defaultValue":"",
+          "options":[
+            ""
+          ]
+        },
+        {
+          "name":"IncidentType",
+          "text":"Incident Type",
+          "description":"Select the type of incident.",
+          "type":"option",
+          "defaultValue":"Client Fall",
+          "options":[
+            "Client Fall",
+            "Medication Error",
+            "Injury to Caregiver",
+            "Property Damage",
+            "Client Behavioral Issue",
+            "Emergency / 911 Called",
+            "Other"
+          ]
+        },
+        {
+          "name":"IncidentDetails",
+          "text":"Incident Details",
+          "description":"Briefly describe what occurred.",
+          "type":"string",
+          "defaultValue":"",
+          "options":[
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "name":"New Caregiver Orientation",
+      "type":"Task",
+      "subject":"Caregiver",
+      "text":"Schedule and conduct new caregiver orientation on [OrientationDate]. Cover company policies, procedures, documentation requirements, and client care expectations.",
+      "fields":[
+        {
+          "name":"OrientationDate",
+          "text":"Orientation Date/Time",
+          "description":"Enter the scheduled date and time for orientation.",
+          "type":"datetime",
+          "defaultValue":"",
+          "options":[
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Caregiver Performance Note",
+      "type":"Note",
+      "subject":"Caregiver",
+      "text":"Performance note recorded on [NoteDate]. Type: [PerformanceType]. Details: [NoteDetails].",
+      "fields":[
+        {
+          "name":"NoteDate",
+          "text":"Note Date",
+          "description":"Enter the date of this performance note.",
+          "type":"datetime",
+          "defaultValue":"",
+          "options":[
+            ""
+          ]
+        },
+        {
+          "name":"PerformanceType",
+          "text":"Performance Note Type",
+          "description":"Select whether this is a positive or corrective note.",
+          "type":"option",
+          "defaultValue":"Commendation",
+          "options":[
+            "Commendation",
+            "Corrective Action",
+            "Verbal Warning",
+            "Written Warning",
+            "Other"
+          ]
+        },
+        {
+          "name":"NoteDetails",
+          "text":"Details",
+          "description":"Describe the performance observation.",
+          "type":"string",
+          "defaultValue":"",
+          "options":[
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "name":"New Client Intake",
+      "type":"Task",
+      "subject":"Customer",
+      "text":"Complete intake process for new client. Scheduled service start date: [ServiceStartDate]. Assign caregiver, review care plan, and confirm emergency contacts are on file.",
+      "fields":[
+        {
+          "name":"ServiceStartDate",
+          "text":"Service Start Date",
+          "description":"Enter the date services are scheduled to begin.",
+          "type":"datetime",
+          "defaultValue":"",
+          "options":[
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Client Hospitalization",
+      "type":"Note",
+      "subject":"Customer",
+      "text":"Client was hospitalized on [HospitalizationDate] at [HospitalName]. Services placed on hold. Follow up with family for discharge updates and expected return to service.",
+      "fields":[
+        {
+          "name":"HospitalizationDate",
+          "text":"Hospitalization Date",
+          "description":"Enter the date the client was hospitalized.",
+          "type":"datetime",
+          "defaultValue":"",
+          "options":[
+            ""
+          ]
+        },
+        {
+          "name":"HospitalName",
+          "text":"Hospital Name",
+          "description":"Enter the name of the hospital.",
+          "type":"string",
+          "defaultValue":"",
+          "options":[
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Client Complaint",
+      "type":"Task",
+      "subject":"Customer",
+      "text":"Client filed a complaint on [ComplaintDate] regarding [ComplaintCategory]. Details: [ComplaintDetails]. Follow up to investigate and resolve.",
+      "fields":[
+        {
+          "name":"ComplaintDate",
+          "text":"Complaint Date",
+          "description":"Enter the date the complaint was received.",
+          "type":"datetime",
+          "defaultValue":"",
+          "options":[
+            ""
+          ]
+        },
+        {
+          "name":"ComplaintCategory",
+          "text":"Complaint Category",
+          "description":"Select the category that best describes the complaint.",
+          "type":"option",
+          "defaultValue":"Caregiver Conduct",
+          "options":[
+            "Caregiver Conduct",
+            "Missed Visit",
+            "Late Arrival",
+            "Quality of Care",
+            "Billing Issue",
+            "Scheduling Issue",
+            "Other"
+          ]
+        },
+        {
+          "name":"ComplaintDetails",
+          "text":"Complaint Details",
+          "description":"Briefly describe the client's complaint.",
+          "type":"string",
+          "defaultValue":"",
+          "options":[
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Client Service Pause",
+      "type":"Note",
+      "subject":"Customer",
+      "text":"Client requested a service hold from [PauseStartDate] to [PauseEndDate]. Reason: [Reason]. Notify assigned caregiver(s) and update schedule accordingly.",
+      "fields":[
+        {
+          "name":"PauseStartDate",
+          "text":"Pause Start Date",
+          "description":"Enter the first date services will be on hold.",
+          "type":"datetime",
+          "defaultValue":"",
+          "options":[
+            ""
+          ]
+        },
+        {
+          "name":"PauseEndDate",
+          "text":"Pause End Date",
+          "description":"Enter the date services are expected to resume.",
+          "type":"datetime",
+          "defaultValue":"",
+          "options":[
+            ""
+          ]
+        },
+        {
+          "name":"Reason",
+          "text":"Reason for Hold",
+          "description":"Enter the reason the client is pausing services.",
+          "type":"string",
+          "defaultValue":"",
+          "options":[
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Client End of Service",
+      "type":"Note",
+      "subject":"Customer",
+      "text":"Client services ended on [EndDate]. Reason for discharge: [DischargeReason]. Notify assigned caregivers and close out scheduling.",
+      "fields":[
+        {
+          "name":"EndDate",
+          "text":"Last Day of Service",
+          "description":"Enter the final date of service for this client.",
+          "type":"datetime",
+          "defaultValue":"",
+          "options":[
+            ""
+          ]
+        },
+        {
+          "name":"DischargeReason",
+          "text":"Discharge Reason",
+          "description":"Select the reason services are ending.",
+          "type":"option",
+          "defaultValue":"Client Request",
+          "options":[
+            "Client Request",
+            "Moved to Facility",
+            "Deceased",
+            "Hospitalized",
+            "Non-Payment",
+            "Safety Concern",
+            "Other"
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Client Wellness Check Call",
+      "type":"Task",
+      "subject":"Customer",
+      "text":"Place a wellness check call to client on [CallDate]. Document client's status, any concerns raised, and whether any follow-up action is needed.",
+      "fields":[
+        {
+          "name":"CallDate",
+          "text":"Call Date",
+          "description":"Enter the date of the wellness check call.",
+          "type":"datetime",
+          "defaultValue":"",
+          "options":[
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Update Client Emergency Contact",
+      "type":"Note",
+      "subject":"Customer",
+      "text":"Client's emergency contact information was updated. New contact: [ContactName], Relationship: [Relationship], Phone: [ContactPhone].",
+      "fields":[
+        {
+          "name":"ContactName",
+          "text":"Contact Name",
+          "description":"Enter the name of the emergency contact.",
+          "type":"string",
+          "defaultValue":"",
+          "options":[
+            ""
+          ]
+        },
+        {
+          "name":"Relationship",
+          "text":"Relationship to Client",
+          "description":"Enter the contact's relationship to the client.",
+          "type":"string",
+          "defaultValue":"",
+          "options":[
+            ""
+          ]
+        },
+        {
+          "name":"ContactPhone",
+          "text":"Contact Phone Number",
+          "description":"Enter the emergency contact's phone number.",
+          "type":"string",
+          "defaultValue":"",
+          "options":[
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Client Care Plan Update",
+      "type":"Note",
+      "subject":"Customer",
+      "text":"Client care plan was updated on [UpdateDate]. Changes made: [ChangesSummary]. Notify assigned caregiver(s) of updated instructions.",
+      "fields":[
+        {
+          "name":"UpdateDate",
+          "text":"Update Date",
+          "description":"Enter the date the care plan was updated.",
+          "type":"datetime",
+          "defaultValue":"",
+          "options":[
+            ""
+          ]
+        },
+        {
+          "name":"ChangesSummary",
+          "text":"Summary of Changes",
+          "description":"Briefly describe what was changed in the care plan.",
+          "type":"string",
+          "defaultValue":"",
+          "options":[
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Billing Follow-Up",
+      "type":"Task",
+      "subject":"Customer",
+      "text":"Follow up with client regarding outstanding balance on invoice from [InvoiceDate]. Amount due: [AmountDue]. Confirm payment arrangement or escalate as needed.",
+      "fields":[
+        {
+          "name":"InvoiceDate",
+          "text":"Invoice Date",
+          "description":"Enter the date of the outstanding invoice.",
+          "type":"datetime",
+          "defaultValue":"",
+          "options":[
+            ""
+          ]
+        },
+        {
+          "name":"AmountDue",
+          "text":"Amount Due",
+          "description":"Enter the outstanding balance amount.",
+          "type":"string",
+          "defaultValue":"",
+          "options":[
+            ""
+          ]
+        }
+      ]
     }
   ]
 }
